@@ -37,8 +37,10 @@ function App() {
                 <div className="flex-wrap-col relative z-10 w-12 md:w-1/2 top-36 left-[20%] md:left-[45%] md:top-[12%] text-left">
                     <p className="text-5xl text-white font-['Great_Sailor'] md:text-5xl italic">I'm <span className="text-[#85B97C] not-italic"><span className="text-6xl md:text-7xl">G</span>eorge <span className="text-6xl md:text-7xl">O</span>akley</span>,</p><p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic"><span className="whitespace-nowrap">a FULL</span>-STACK</p> <p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic">DEVELOPER.</p>
                 </div>
-                <div className="z-10 text-gray-700 hover:text-white text-4xl flex-wrap-col relative top-40 md:top-[20%]">
-                    <FontAwesomeIcon icon="fa-solid fa-arrow-down" />
+                <div className="z-10 w-auto text-gray-700 hover:text-white text-4xl flex-wrap-col relative top-40 md:top-[20%] transition ease-in-out duration-1000 hover:inline-flex transform">
+                    <a href="#About-me">
+                        <FontAwesomeIcon icon="fa-solid fa-arrow-down" />
+                    </a>
                 </div>
             </div>
             <div id="About-me" className="bg-zinc-900 h-screen flex">
