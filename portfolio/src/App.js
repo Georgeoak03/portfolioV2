@@ -27,6 +27,14 @@ function App() {
         </head>
         <body>
         <div className="scroll-smooth m-auto">
+            <nav id="navbar" className="fixed w-full z-20 top-0 border-b-2 border-white bg-zinc-900 bg-opacity-95 flex flex-wrap items-center justify-between mx-auto">
+                <a href="#splash" className="font-['Great_Sailor'] text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
+                <div className="hidden w-full md:block md:w-auto " id="navbar-default">
+                    <a href="#About-me" className="font-['Great_Sailor'] text-white text-6xl collapse md:visible hover:text-[#85B97C]">About.</a>
+                    <a href="#Projects" className="font-['Great_Sailor'] text-white text-6xl collapse md:visible hover:text-[#85B97C]">Projects.</a>
+                    <a href="#Contact" className="font-['Great_Sailor'] text-white text-6xl collapse md:visible hover:text-[#85B97C]">Contact</a>
+                </div>
+            </nav>
             <div id="splash" className="bg-zinc-900 h-screen flex-wrap-col ">
                 <div className="flex w-3/5 h-[55%] md:h-3/5 absolute z-0 bg-[#222A23] top-44 left-[15%] md:left-1/4"></div>
                 <div className="flex-wrap-col max-w-xs relative z-10 top-28 left-[10%] md:left-[15%] relative">
@@ -44,12 +52,7 @@ function App() {
                 </div>
             </div>
             <div id="About-me" className="bg-zinc-900 h-screen flex">
-                <nav id="navbar" className="fixed w-full z-20 top-0 left-0 border-b-2 border-white bg-zinc-900 bg-opacity-95">
-                    <a href="#splash" className="font-['Great_Sailor'] text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
-                    <a href="#About-me" className="font-['Great_Sailor'] text-white text-6xl collapse md:visible">About.</a>
-                    <a href="#Projects" className="font-['Great_Sailor'] text-white text-6xl collapse md:visible">Projects.</a>
-                    <a href="#Contact" className="font-['Great_Sailor'] text-white text-6xl collapse md:visible">Contact</a>
-                </nav>
+
                 <div className="flex-wrap-col m-auto md:m-0">
                     <div className="flex-wrap-col w-2/5 relative z-10 left-1/4 md:top-32 md:left-40">
                         <h1 className="text-6xl lg:text-12xl md:text-8xl text-white font-['Great_Sailor']">
