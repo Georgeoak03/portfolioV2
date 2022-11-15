@@ -1,5 +1,5 @@
 import './App.css';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // window.onscroll = function() {scrollFunction()};
 // window.onscroll = function() {scrollFunction2()};
 
@@ -24,7 +24,6 @@ function App() {
         <html className="App" lang="en">
         <head>
             <title>George's Portfolio'</title>
-            <script src="https://kit.fontawesome.com/5842c1c896.js" crossOrigin="anonymous"></script>
         </head>
         <body>
         <div className="scroll-smooth">
@@ -38,7 +37,9 @@ function App() {
                 <div className="flex-wrap-col relative z-10 w-12 md:w-2/5 top-36 left-24 md:left-1/5 md:top-32">
                     <p className="text-5xl text-white font-['Great_Sailor'] md:text-5xl italic">I'm <span className="text-[#85B97C] not-italic"><span className="text-6xl md:text-7xl">G</span>eorge <span className="text-6xl md:text-7xl">O</span>akley</span>,</p><p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic"><span className="whitespace-nowrap">a FULL</span>-STACK DEVELOPER.</p>
                 </div>
-                <i className="fa-solid fa-arrow-down"></i>
+                <div className="z-10 text-gray-600 hover:text-white text-xl flex-wrap-col relative w-12 items-center">
+                    <FontAwesomeIcon icon="fa-solid fa-arrow-down" />
+                </div>
             </div>
             <div id="About-me" className="bg-zinc-900 h-screen flex">
                 <nav id="navbar" className="fixed w-full z-20 top-0 left-0 border-b-2 border-white bg-zinc-900 bg-opacity-95">
