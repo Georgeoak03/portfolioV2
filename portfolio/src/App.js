@@ -35,7 +35,7 @@ function App() {
                     <a href="#Contact" className="font-['Great_Sailor'] text-white text-6xl collapse md:visible hover:text-[#85B97C]">Contact</a>
                 </div>
             </nav>
-            <div id="splash" className="bg-zinc-900 h-screen flex-wrap-col ">
+            <div id="splash" className="bg-zinc-900 h-screen flex-wrap-col z-30">
                 <div className="flex w-3/5 h-[55%] md:h-3/5 absolute z-0 bg-[#222A23] top-44 left-[15%] md:left-1/4"></div>
                 <div className="flex-wrap-col max-w-xs relative z-10 top-28 left-[10%] md:left-[15%] relative">
                     <h1 className="lg:text-[175px] md:text-[150px] text-8xl text-white font-['Great_Sailor']">
