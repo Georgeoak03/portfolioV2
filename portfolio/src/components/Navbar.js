@@ -12,25 +12,26 @@ export default function Navbar() {
                 <a href="#splash" className="font-['Great_Sailor'] text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
                 <nav>
                 <div className="mobile-menu flex lg:hidden">
-                    <div className="absolute top-0 right-0 px-8 py-8" onClick={() => setIsNavOpen((prev) => !prev)}>
+                    <div className="top-4 absolute
+                    right-0 px-8" onClick={() => setIsNavOpen((prev) => !prev)}>
                         <FontAwesomeIcon icon="fa-solid fa-bars" className="md:collapse text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
                     </div>
                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-                        <div className="CROSS-ICON absolute top-0 right-0 px-8 py-8 z-20" onClick={() => setIsNavOpen(false)}>
+                        <div className="CROSS-ICON absolute top-0 right-2 px-8 py-8 z-20" onClick={() => setIsNavOpen(false)}>
                             <FontAwesomeIcon icon="fa-solid fa-xmark" className="text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
                         </div>
-                        <ul className="NAVIGATION-MOBILE-OPEN flex flex-col justify-between bg-zinc-900 opacity-75 p-8">
+                        <ul className="NAVIGATION-MOBILE-OPEN flex flex-col justify-between bg-zinc-900 opacity-75 p-8 border-2 border-[#85B97C] rounded-lg transition ease-in-out duration-1000 transform">
                             <li>
-                                <a href="#splash" className="font-['Great_Sailor'] text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
+                                <a href="#splash" onClick={() => setIsNavOpen(false)} className="font-['Great_Sailor'] text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
                             </li>
                             <li>
-                                <a href="#about-me" className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">About.</a>
+                                <a href="#about-me" onClick={() => setIsNavOpen(false)} className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">About.</a>
                             </li>
                             <li>
-                                <a href="#projects" className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">Projects.</a>
+                                <a href="#projects" onClick={() => setIsNavOpen(false)} className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">Projects.</a>
                             </li>
                             <li>
-                                <a href="#contact" className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">Contact.</a>
+                                <a href="#contact" onClick={() => setIsNavOpen(false)} className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">Contact.</a>
                             </li>
                         </ul>
                     </div>
@@ -51,8 +52,6 @@ export default function Navbar() {
                         top: 0;
                         left: 0;
                         background: black;
-                        webkit-backdrop-filter: blur(20px);
-                        backdrop-filter: blur(20px);
                         z-index: 10;
                         opacity: 0.9;
                         display: flex;
