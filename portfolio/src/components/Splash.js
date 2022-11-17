@@ -14,9 +14,9 @@ export default function Splash() {
                 <div className="flex-wrap-col relative z-10 w-12 md:w-1/2 top-36 left-[20%] md:left-[45%] md:top-[12%] text-left">
                     <p className="text-5xl text-white font-['Great_Sailor'] md:text-5xl italic">I'm <span className="text-[#85B97C] not-italic"><span className="text-6xl md:text-7xl">G</span>eorge <span className="text-6xl md:text-7xl">O</span>akley</span>,</p><p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic"><span className="whitespace-nowrap">a FULL</span>-STACK</p> <p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic">DEVELOPER.</p>
                 </div>
-                <div className="z-10 w-auto text-gray-700 hover:text-white text-4xl flex-wrap-col relative top-40 md:top-[20%] transition ease-in-out duration-1000 hover:inline-flex transform">
+                <div className="z-10 w-auto flex relative justify-center top-40 md:top-[20%]">
                     <a href="#about-me">
-                        <FontAwesomeIcon icon="fa-solid fa-arrow-down" />
+                        <FontAwesomeIcon icon="fa-solid fa-arrow-down" className="text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
                     </a>
                 </div>
             </div>
