@@ -16,18 +16,21 @@ export default function Navbar() {
                         <FontAwesomeIcon icon="fa-solid fa-bars" className="md:collapse text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
                     </div>
                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-                        <div className="CROSS-ICON absolute top-0 right-0 px-8 py-8" onClick={() => setIsNavOpen(false)}>
+                        <div className="CROSS-ICON absolute top-0 right-0 px-8 py-8 z-20" onClick={() => setIsNavOpen(false)}>
                             <FontAwesomeIcon icon="fa-solid fa-xmark" className="text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
                         </div>
-                        <ul className="NAVIGATION-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] bg-zinc-900 opacity-75">
-                            <li className="border-b border-gray-400 my-8 uppercase">
-                                <a href="/about">About</a>
+                        <ul className="NAVIGATION-MOBILE-OPEN flex flex-col justify-between bg-zinc-900 opacity-75 p-8">
+                            <li>
+                                <a href="#splash" className="font-['Great_Sailor'] text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
                             </li>
-                            <li className="border-b border-gray-400 my-8 uppercase">
-                                <a href="/portfolio">Portfolio</a>
+                            <li>
+                                <a href="#about-me" className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">About.</a>
                             </li>
-                            <li className="border-b border-gray-400 my-8 uppercase">
-                                <a href="/contact">Contact</a>
+                            <li>
+                                <a href="#projects" className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">Projects.</a>
+                            </li>
+                            <li>
+                                <a href="#contact" className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">Contact.</a>
                             </li>
                         </ul>
                     </div>
@@ -51,11 +54,11 @@ export default function Navbar() {
                         webkit-backdrop-filter: blur(20px);
                         backdrop-filter: blur(20px);
                         z-index: 10;
-                        opacity: 0.5;
+                        opacity: 0.9;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-evenly;
-                        align-items: center;}`}
+                        padding: 25px;
+                        }`}
             </style>
         </section>
     )
