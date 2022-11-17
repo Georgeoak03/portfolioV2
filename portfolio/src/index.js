@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faArrowDown, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDown, faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-library.add(faArrowDown, faBars)
+library.add(faArrowDown, faBars, faXmark)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
