@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects() {
     return (
-        <section id="projects">
+        <section id="projects" className="relative">
             <div className="bg-zinc-900 h-screen flex">
                 <div className="flex-wrap-col m-auto md:m-0">
                     <div className="flex-wrap-col w-2/5 relative z-10 left-1/4 md:top-32 md:left-40">
