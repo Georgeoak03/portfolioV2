@@ -5,6 +5,7 @@ import Splash from "./components/Splash";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+// import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 // window.onscroll = function() {scrollFunction()};
 // window.onscroll = function() {scrollFunction2()};
@@ -27,13 +28,14 @@ import Contact from "./components/Contact";
 
 function App() {
     return (
-        <main className="scroll-smooth m-auto">
+        <main id="main">
             <Navbar />
-            <Splash />
-            <About />
-            <Projects />
-            <Contact />
+            <Splash id="splash"/>
+            <About id="about"/>
+            <Projects id="projects"/>
+            <Contact id="contact"/>
         </main>
+
     );
 }
 
