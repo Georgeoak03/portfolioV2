@@ -1,6 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import photoOfMe from './photo-of-me.png';
+import postman from './postman.svg';
+import mongodb from './mongodb.svg';
+import mysql from './mysql.svg';
 
 export default function About() {
     return (
@@ -13,27 +16,32 @@ export default function About() {
                     <h1 className="text-6xl w-2/5 lg:text-12xl md:text-8xl text-white font-['Great_Sailor']">
                         About me.
                     </h1>
-                    <div className="flex-wrap-col z-10 left-[10%] w-4/5 md:w-2/3 top-60 md:top-52">
+                </div>
+                <div className="relative flex-wrap-col left-[10%] top-56 z-10 w-4/5 md:w-2/3 md:top-52">
                     <p className="text-sm text-white font-['Futura'] md:text-lg lg:text-lg">I am a motivated and passionate
                         Full Stack Developer. Outside of catchin' 'mons, chuckin' blue spikey shells and levatating
                         spaceships out of swamps, I have a love for the outdoors and getting to see the world.</p>
+                    <br />
                     <p className="text-sm text-white font-['Futura'] md:text-xl">Technology has always interested
                         and excited me both as a source of leisure and as an invaluable tool. I truly believe it has
                         the potential to change the world for the better. My recent dive into the world of coding
                         has really cemented these ideals for me. Problem-solving and creating bring me such joy and
                         I'm excited to bring my creativity and logic into this challenging new career path.</p>
-                    </div>
-                    <div className="flex-wrap-col z-10 left-[10%] w-4/5 md:w-2/3 top-60 md:top-52 p-6">
-                        <FontAwesomeIcon icon="fa-brands fa-php" className="text-5xl text-white"/>
-                        <FontAwesomeIcon icon="fa-brands fa-js" className="text-5xl text-white"/>
-                        <FontAwesomeIcon icon="fa-brands fa-html5" className="text-5xl text-white"/>
-                        <FontAwesomeIcon icon="fa-brands fa-css3-alt" className="text-5xl text-white"/>
-                        <FontAwesomeIcon icon="fa-brands fa-react" className="text-5xl text-white"/>
-                        <FontAwesomeIcon icon="fa-brands fa-bootstrap" className="text-5xl text-white"/>
-                        <FontAwesomeIcon icon="fa-brands fa-node" className="text-5xl text-white"/>
-                        <FontAwesomeIcon icon="fa-brands fa-sass" className="text-5xl text-white"/>
-                        <FontAwesomeIcon icon="fa-brands fa-git-alt" className="text-5xl text-white"/>
-                    </div>
+                </div>
+                <div className="relative flex-wrap-col z-10 left-[10%] w-4/5 md:w-2/3 top-60 md:top-52 p-6">
+                    <FontAwesomeIcon icon="fa-brands fa-php" className="text-5xl text-white"/>
+                    <FontAwesomeIcon icon="fa-brands fa-js" className="text-5xl text-white"/>
+                    <FontAwesomeIcon icon="fa-brands fa-html5" className="text-5xl text-white"/>
+                    <FontAwesomeIcon icon="fa-brands fa-css3-alt" className="text-5xl text-white"/>
+                    <FontAwesomeIcon icon="fa-brands fa-react" className="text-5xl text-white"/>
+                    <FontAwesomeIcon icon="fa-brands fa-bootstrap" className="text-5xl text-white"/>
+                    <FontAwesomeIcon icon="fa-brands fa-node" className="text-5xl text-white"/>
+                    <FontAwesomeIcon icon="fa-brands fa-sass" className="text-5xl text-white"/>
+                    <FontAwesomeIcon icon="fa-brands fa-git-alt" className="text-5xl text-white"/>
+                    <img src={postman} alt="postman" className="w-12"/>
+                    <img src={mongodb} alt="mongodb" className="w-12"/>
+                    <img src={mysql} alt="mysql" className="w-12"/>
+
                 </div>
 
             </div>
