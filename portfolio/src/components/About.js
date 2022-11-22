@@ -46,7 +46,7 @@ export default function About() {
                     <img src={mongodb} alt="mongodb" className="w-9 mr-1"/>
                     <img src={mysql} alt="mysql" className="w-9"/>
                 </div>
-
+                <div className="relative top-36 w-2/5 h-32 left-[10%] md:top-32 md:left-40"></div>
             </div>
         </section>
     )
