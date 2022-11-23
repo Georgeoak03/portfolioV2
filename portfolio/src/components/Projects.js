@@ -1,5 +1,9 @@
 import React from "react";
 import IcePace from './IcePace.png';
+import SurfwaveFury from './SurfwaveFury.png';
+import IglooInbox from './IglooInbox.png';
+import ArcticExchange from './ArcticExchange.png';
+
 
 export default function Projects() {
     return (
@@ -31,7 +35,7 @@ export default function Projects() {
                     <div className="flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5">
                         <div className="relative h-full">
                             <div className="absolute z-0 w-1/2 bottom-0 left-0">
-                                <img src={IcePace} alt="IcePace" className="opacity-[.15] blur-[1px]"/>
+                                <img src={IglooInbox} alt="Igloo Inbox" className="opacity-[.15] blur-[1px]"/>
                             </div>
                             <div className="left-1/2 flex-wrap-col">
                                 <div className="w-full z-10">
@@ -49,7 +53,7 @@ export default function Projects() {
                     <div className="flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5">
                         <div className="relative h-full">
                             <div className="absolute z-0 w-1/2 bottom-0 right-0">
-                                <img src={IcePace} alt="IcePace" className="opacity-[.15] blur-[1px]"/>
+                                <img src={SurfwaveFury} alt="Surfwave Fury" className="opacity-[.15] blur-[1px]"/>
                             </div>
                             <div className="w-full z-10">
                                 <h3 className="text-white font-['Great_Sailor'] text-2xl">Surfwave Fury</h3>
@@ -65,7 +69,7 @@ export default function Projects() {
                     <div className="flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5">
                         <div className="relative h-full">
                             <div className="absolute z-0 w-1/2 bottom-0 left-0">
-                                <img src={IcePace} alt="IcePace" className="opacity-[.15] blur-[1px]"/>
+                                <img src={ArcticExchange} alt="Arctic Exchange" className="opacity-[.15] blur-[1px]"/>
                             </div>
                             <div className="left-1/2 flex-wrap-col">
                                 <div className="w-full z-10">
