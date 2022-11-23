@@ -9,8 +9,8 @@ export default function About() {
     return (
         <section id="about-me" className="bg-zinc-900 min-h-screen">
             <div className="relative">
-                <div className="absolute w-[35%] h-6 md:h-3/5 z-0 bg-[#222A23] top-40 left-[25%] md:left-1/4"></div>
-                <div className="absolute w-[20%] h-6 md:h-3/5 z-0 bg-[#222A23] top-56 left-[25%] md:left-1/4"></div>
+                <div className="absolute w-[35%] h-6 md:h-3/5 z-0 bg-[#263d28] top-40 left-[25%] md:left-1/4"></div>
+                <div className="absolute w-[20%] h-6 md:h-3/5 z-0 bg-[#263d28] top-56 left-[25%] md:left-1/4"></div>
                 <div className="w-36 flex absolute z-0 left-[55%] top-52">
                     <img src={photoOfMe} alt="George" className="grayscale opacity-25"/>
                 </div>
