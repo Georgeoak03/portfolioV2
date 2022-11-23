@@ -29,8 +29,8 @@ import Contact from "./components/Contact";
 function App() {
     return (
         <main id="main">
-            <Navbar />
             <Splash id="splash"/>
+            <Navbar />
             <About id="about"/>
             <Projects id="projects"/>
             <Contact id="contact"/>

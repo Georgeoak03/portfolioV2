@@ -3,10 +3,10 @@ import React from "react";
 
 export default function Splash() {
     return (
-        <section id="splash" className="bg-zinc-900 min-h-screen">
+        <section id="splash" className="bg-zinc-900 min-h-screen z-999">
             <div className="relative">
-                <div className="absolute w-[70%] h-[475px] md:h-4/5 z-0 bg-[#222A23] top-52 left-[15%] md:left-1/4"></div>
-                <div className="relative max-w-xs z-10 top-44 left-[10%] md:left-[15%]">
+                <div className="absolute w-[70%] h-[475px] md:h-4/5 z-0 bg-[#222A23] top-44 left-[15%] md:left-1/4"></div>
+                <div className="relative max-w-xs z-10 top-36 left-[10%] md:left-[15%]">
                     <h1 className="lg:text-[175px] md:text-[150px] text-8xl text-white font-['Great_Sailor']">
                         HELLO THERE!
                     </h1>
