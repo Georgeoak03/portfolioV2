@@ -9,17 +9,18 @@ export default function About() {
     return (
         <section id="about-me" className="bg-zinc-900 min-h-screen">
             <div className="relative">
-                <div className="absolute w-[35%] h-6 md:h-3/5 z-0 bg-[#263d28] top-40 left-[25%] md:left-1/4"></div>
-                <div className="absolute w-[20%] h-6 md:h-3/5 z-0 bg-[#263d28] top-56 left-[25%] md:left-1/4"></div>
+                <div className="invisible absolute z-0 bg-[#222A23] w-[70%] h-[475px] top-44 left-[15%] md:visible md:top-32 md:h-[700px] md:left-[20%]"></div>
+                <div className="absolute z-0 bg-[#263d28] w-[35%] h-6 top-40 left-[25%] md:h-10 md:left-[16%] md:top-44 md:w-[450px]"></div>
+                <div className="absolute w-[20%] h-6 z-0 bg-[#263d28] top-56 left-[25%] md:hidden"></div>
                 <div className="w-36 flex absolute z-0 left-[55%] top-52">
                     <img src={photoOfMe} alt="George" className="grayscale opacity-25"/>
                 </div>
-                <div className="relative z-10 w-4/5 top-32 left-[20%] md:top-32 md:left-40">
-                    <h1 className="text-6xl w-2/5 lg:text-12xl md:text-8xl text-white font-['Great_Sailor']">
+                <div className="relative z-10 w-4/5 top-32 left-[20%] md:top-32 md:left-[12%]">
+                    <h1 className="text-6xl w-2/5 md:w-full lg:text-12xl md:text-8xl text-white font-['Great_Sailor']">
                         About me.
                     </h1>
                 </div>
-                <div className="relative flex-wrap-col left-[10%] top-56 z-10 w-4/5 md:w-2/3 md:top-52">
+                <div className="relative flex-wrap-col left-[10%] top-56 z-10 w-4/5 md:w-2/3 md:top-40 md:left-[22%]">
                     <p className="text-sm text-white font-['Futura'] md:text-lg lg:text-lg">I am a motivated and passionate
                         Full Stack Developer. Outside of catchin' 'mons, chuckin' blue spikey shells and levatating
                         spaceships out of swamps, I have a love for the outdoors and getting to see the world.</p>
