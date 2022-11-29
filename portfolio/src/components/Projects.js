@@ -7,32 +7,32 @@ import ArcticExchange from './ArcticExchange.png';
 
 export default function Projects() {
     return (
-        <section id="projects" className="bg-zinc-900 flex">
+        <section id="projects" className="bg-zinc-900">
             <div className="relative">
-                <div className="absolute w-3/5 h-8 md:h-3/5 z-0 bg-[#263d28] top-44 left-[18%] md:left-1/4"></div>
-                <div className="relative top-36 w-2/5 left-[10%] md:top-32 md:left-40">
+                <div className="absolute w-3/5 h-8  z-0 bg-[#263d28] top-44 left-[18%] md:h-10 md:left-[11%] md:w-[350px]"></div>
+                <div className="relative top-36 w-2/5 left-[10%] md:top-32 md:left-[7%]">
                     <h1 className="text-6xl lg:text-12xl md:text-8xl text-white font-['Great_Sailor']">
                         Projects.
                     </h1>
                 </div>
-                <div className="relative flex-wrap-col m-auto justify-center top-36 w-fit md:top-32 md:left-40">
-                    <div className="flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5">
+                <div className="relative flex-wrap-col m-auto justify-center top-36 w-fit md:top-0 md:flex-wrap md:left-[40%] md:justify-content md:m-0 md:w-[750px]">
+                    <div className="flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5 md:w-36 md:p-4 md:flex">
                         <div className="relative h-full">
-                            <div className="absolute z-0 w-1/2 bottom-0 right-0">
+                            <div className="absolute z-0 w-1/2 bottom-0 right-0 md:w-full">
                                 <img src={IcePace} alt="IcePace" className="opacity-[.15] blur-[1px]"/>
                             </div>
                             <div className="w-full z-10">
                                 <h3 className="text-white font-['Great_Sailor'] text-2xl">Ice Pace</h3>
                             </div>
-                            <div className="w-1/2 z-10">
-                                <h4 className="text-white font-['Futura'] text-sm">SOCIAL MEDIA APP</h4>
+                            <div className="w-1/2 z-10 md:w-full">
+                                <h4 className="text-white font-['Futura'] text-sm md:text-xs">SOCIAL MEDIA APP</h4>
                             </div>
-                            <div className="w-1/2 z-10">
+                            <div className="w-1/2 z-10 md:w-full">
                                 <p className="text-white font-['Futura'] text-xs">OOP-based & SQL for backend.</p>
                             </div>
                         </div>
                     </div>
-                    <div className="flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5">
+                    <div className="flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5 md:flex">
                         <div className="relative h-full">
                             <div className="absolute z-0 w-1/2 bottom-0 left-0">
                                 <img src={IglooInbox} alt="Igloo Inbox" className="opacity-[.15] blur-[1px]"/>
