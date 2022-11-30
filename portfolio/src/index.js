@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faArrowDown, faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
-import { faPhp, faJs, faHtml5, faCss3Alt, faReact, faBootstrap, faNode, faSass, faGitAlt } from '@fortawesome/free-brands-svg-icons'
+import { faArrowDown, faBars, faXmark, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faPhp, faJs, faHtml5, faCss3Alt, faReact, faBootstrap, faNode, faSass, faGitAlt, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-library.add(faArrowDown, faBars, faXmark, faPhp, faJs, faHtml5, faCss3Alt, faReact, faBootstrap, faNode, faSass, faGitAlt)
+library.add(faArrowDown, faBars, faXmark, faPhp, faJs, faHtml5, faCss3Alt, faReact, faBootstrap, faNode, faSass, faGitAlt, faLinkedin, faGithub, faEnvelope)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

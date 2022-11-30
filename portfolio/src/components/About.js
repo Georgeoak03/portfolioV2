@@ -1,5 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import photoOfMe from './photo-of-me.png';
 import postman from './postman.svg';
 import mongodb from './mongodb.svg';

@@ -1,3 +1,9 @@
 #contact {
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh - 200px);
+}
+
+@media (min-width: 768px) {
+    #contact {
+        min-height: calc(100vh - 100px);
+    }
 }
