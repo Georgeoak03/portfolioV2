@@ -1,9 +1,10 @@
 import React from "react";
+import './Contact.css';
 
 export default function Contact() {
     return (
-        <section id="contact" className="bg-zinc-900 min-h-screen">
-            <div className="">
+        <section id="contact" className="bg-zinc-900">
+            <div>
                 <div className="flex-wrap-col relative m-auto md:m-0">
                     <div className="invisible absolute z-0 bg-[#222A23] w-[70%] h-[475px] top-44 left-[15%] md:visible md:top-32 md:h-[600px] md:left-[20%]"></div>
                     <div className="absolute w-[35%] h-6 md:h-3/5 z-0 bg-[#263d28] top-40 left-[18%] md:h-9 md:left-[12%] md:top-44 md:w-[550px]"></div>
@@ -17,7 +18,7 @@ export default function Contact() {
                             <div className="relative pl-[12%] md:w-[40%] md:left-[20%]">
                                 <p className="text-sm text-white text-right font-['Futura']">Do you have any questions or do you want to work together? Please get in contact and I'll get back to you.</p>
                             </div>
-                            <div className="pt-5 md:w-[20%] md:absolute md:left-[62%]">
+                            <div className="relative md:absolute pt-5 md:w-[20%] md:left-[62%]">
                                 <div className="relative mb-4">
                                     <input
                                         type="text"
@@ -54,12 +55,8 @@ export default function Contact() {
                             </div>
                         </form>
                     </div>
-                    <footer>
-                        <div className="relative w-full z-20 flex flex-wrap items-center justify-between mx-auto p-1 px-4">
-                            <a href="#splash" className="font-['Great_Sailor'] text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
-                        </div>
-                    </footer>
                 </div>
+
             </div>
         </section>
     )

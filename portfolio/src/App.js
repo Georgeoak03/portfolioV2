@@ -5,35 +5,17 @@ import Splash from "./components/Splash";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-// import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
-// window.onscroll = function() {scrollFunction()};
-// window.onscroll = function() {scrollFunction2()};
-
-// function scrollFunction() {
-//     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//         document.getElementById("navbar").style.display = "visible";
-//     } else {
-//         document.getElementById("navbar").style.display = "none";
-//     }
-// }
-
-// function scrollFunction2() {
-//     if (document.getElementById("") === "splash") {
-//         document.getElementById("navbar").style.display = "none";
-//     } else {
-//         document.getElementById("navbar").style.display = "inline";
-//     }
-// }
+import Footer from "./components/Footer";
 
 function App() {
     return (
-        <main id="main">
+        <main id="main" className="bg-zinc-900 min-h-full">
             <Splash id="splash"/>
             <Navbar />
             <About id="about"/>
             <Projects id="projects"/>
             <Contact id="contact"/>
+            <Footer id="footer"/>
         </main>
 
     );
