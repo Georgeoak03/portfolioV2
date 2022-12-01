@@ -7,8 +7,8 @@ import mysql from './mysql.svg';
 
 export default function About() {
     return (
-        <section id="about-me" className="bg-zinc-900 min-h-screen">
-            <div className="relative">
+        <section id="about-me" className="bg-zinc-900 min-h-screen motion-safe:animate-fadeIn snap-y">
+            <div className="relative js-show-on-scroll snap-center">
                 <div className="invisible absolute z-0 bg-[#222A23] w-[70%] h-[475px] top-44 left-[15%] lg:visible lg:top-32 lg:h-[700px] lg:left-[20%]"></div>
                 <div className="absolute z-0 bg-[#263d28] w-[175px] lg:w-[300px] h-6 top-40 left-[25%] lg:h-10 lg:left-[16%] lg:top-44 lg:w-[450px]"></div>
                 <div className="absolute w-[75px] h-6 z-0 bg-[#263d28] top-56 left-[25%] lg:hidden"></div>
