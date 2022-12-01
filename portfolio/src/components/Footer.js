@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col">
+        <footer className="flex flex-col bg-zinc-900 z-20">
             <div className="invisible md:visible relative pin-b w-full bottom-0 z-20 flex flex-wrap items-center justify-between mt-auto py-4 px-8">
                 <h2 className=" font-['Futura'] text-gray-500 text-md">George Oakley 2022</h2>
                 <div>
