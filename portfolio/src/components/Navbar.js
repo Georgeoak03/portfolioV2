@@ -8,7 +8,7 @@ export default function Navbar() {
 
     return (
         <section id="navbar">
-            <div className="fixed w-full z-20 top-0 border-b-2 border-gray-700 bg-zinc-900 bg-opacity-95 flex flex-wrap items-center justify-between mx-auto p-1 px-4">
+            <header className="fixed w-full z-20 top-0 border-b-2 border-gray-700 bg-zinc-900 bg-opacity-95 flex flex-wrap items-center justify-between mx-auto p-1 px-4">
                 <a href="#splash" className="font-['Great_Sailor'] text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
                 <nav>
                 <div className="mobile-menu flex lg:hidden">
@@ -42,7 +42,7 @@ export default function Navbar() {
                         <a href="#contact" className="font-['Great_Sailor'] text-white text-6xl md:text-5xl collapse md:visible hover:text-[#85B97C]">Contact.</a>
                     </div>
                 </nav>
-            </div>
+            </header>
             <style>{`.hideMenuNav {display: none;}
                       .showMenuNav {
                         display: block;

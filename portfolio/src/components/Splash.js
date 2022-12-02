@@ -1,9 +1,13 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React from "react";
+import { motion as m } from "framer-motion";
 
 export default function Splash() {
     return (
-        <section id="splash" className="bg-zinc-900 min-h-screen z-999">
+        <m.section initial={{ opacity: 0 }}
+                   animate={{ opacity: 1 }}
+                   transition={{ duration: 0.75, ease: "easeOut" }}
+                   id="splash" className="bg-zinc-900 min-h-screen z-999">
             <div>
                 <div className="relative">
                     <div className="relative h-fit left-[10%] md:left-[25%] lg:left-[35%] w-screen">
@@ -22,14 +26,14 @@ export default function Splash() {
                     <div className="relative z-10 w-auto inline-block mt-48 ml-[18%] md:left-[20%] lg:left-[30%] text-left">
                         <p className="text-5xl text-white font-['Great_Sailor'] md:text-5xl italic w-auto inline-block">I'm <span className="text-[#85B97C] not-italic"><span className="text-6xl md:text-7xl">G</span>eorge <span className="text-6xl md:text-7xl">O</span>akley</span>,</p><p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic"><span className="whitespace-nowrap w-auto inline-block">a FULL</span>-STACK</p> <p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic w-auto inline-block">DEVELOPER.</p>
                     </div>
-                    <div className="relative top-36 w-2/5 h-32 left-[10%] md:top-32 md:left-40"></div>
                 </div>
                 <div className="relative bottom-10 z-10 w-auto mt-28 flex justify-center w-screen hover:animate-bounce">
                     <a href="#about-me">
                         <FontAwesomeIcon icon="fa-solid fa-arrow-down" className="text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
                     </a>
                 </div>
+                <div className="relative top-36 w-2/5 h-32 left-[10%] md:top-32 md:left-40"></div>
             </div>
-        </section>
+        </m.section>
     )
 }

@@ -4,10 +4,14 @@ import photoOfMe from './photo-of-me.png';
 import postman from './postman.svg';
 import mongodb from './mongodb.svg';
 import mysql from './mysql.svg';
+import { motion as m } from "framer-motion";
 
 export default function About() {
     return (
-        <section id="about-me" className="bg-zinc-900 min-h-screen motion-safe:animate-fadeIn snap-y">
+        <m.section initial={{ opacity: 0 }}
+                   animate={{ opacity: 1 }}
+                   transition={{ duration: 0.75, ease: "easeOut" }}
+                   id="about-me" className="bg-zinc-900 min-h-screen motion-safe:animate-fadeIn snap-y">
             <div className="relative js-show-on-scroll snap-center">
                 <div className="invisible absolute z-0 bg-[#222A23] w-[70%] h-[475px] top-44 left-[15%] lg:visible lg:top-32 lg:h-[700px] lg:left-[20%]"></div>
                 <div className="absolute z-0 bg-[#263d28] w-[175px] lg:w-[300px] h-6 top-40 left-[25%] lg:h-10 lg:left-[16%] lg:top-44 lg:w-[450px]"></div>
@@ -65,6 +69,6 @@ export default function About() {
                 </div>
                 <div className="relative top-36 w-2/5 h-32 left-[10%] lg:top-32 lg:left-40"></div>
             </div>
-        </section>
+        </m.section>
     )
 }
