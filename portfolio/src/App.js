@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+
     return (
         <main id="main" className="bg-zinc-900 min-h-full scroll-smooth">
             <Splash id="splash"/>

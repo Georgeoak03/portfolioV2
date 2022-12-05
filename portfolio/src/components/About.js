@@ -1,18 +1,36 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import photoOfMe from './photo-of-me.png';
 import postman from './postman.svg';
 import mongodb from './mongodb.svg';
 import mysql from './mysql.svg';
-import { motion as m } from "framer-motion";
+import {motion as m, useAnimation} from "framer-motion";
+import {useInView} from "react-intersection-observer";
 
 export default function About() {
+    const boxVariant = {
+        visible: { opacity: 1},
+        hidden: { opacity: 0},
+    }
+
+    const control = useAnimation()
+    const [ref, inView] = useInView()
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        } else {
+            control.start("hidden");
+        }
+    }, [control, inView]);
+
     return (
-        <m.section initial={{ opacity: 0 }}
-                   animate={{ opacity: 1 }}
-                   transition={{ duration: 0.75, ease: "easeOut" }}
-                   id="about-me" className="bg-zinc-900 min-h-screen motion-safe:animate-fadeIn snap-y">
-            <div className="relative js-show-on-scroll snap-center">
+        <section id="about-me" className="bg-zinc-900">
+            <m.div ref={ref}
+                 variants={boxVariant}
+                 initial="hidden"
+                 animate={control}
+                className="relative">
                 <div className="invisible absolute z-0 bg-[#222A23] w-[70%] h-[475px] top-44 left-[15%] lg:visible lg:top-32 lg:h-[700px] lg:left-[20%]"></div>
                 <div className="absolute z-0 bg-[#263d28] w-[175px] lg:w-[300px] h-6 top-40 left-[25%] lg:h-10 lg:left-[16%] lg:top-44 lg:w-[450px]"></div>
                 <div className="absolute w-[75px] h-6 z-0 bg-[#263d28] top-56 left-[25%] lg:hidden"></div>
@@ -20,7 +38,7 @@ export default function About() {
                     <img src={photoOfMe} alt="George" className="grayscale opacity-25 lg:opacity-75"/>
                 </div>
                 <div className="relative z-10 w-4/5 top-32 left-[20%] lg:top-32 lg:left-[12%]">
-                    <h1 className="text-6xl w-2/5 lg:w-full lg:text-12xl lg:text-8xl text-white font-['Great_Sailor']">
+                    <h1 className="text-6xl w-1/5 lg:w-full lg:text-12xl lg:text-8xl text-white font-['Great_Sailor']">
                         About me.
                     </h1>
                 </div>
@@ -67,8 +85,8 @@ export default function About() {
                     <img src={mongodb} alt="mongodb" className="w-9 mr-1"/>
                     <img src={mysql} alt="mysql" className="w-9"/>
                 </div>
-                <div className="relative top-36 w-2/5 h-32 left-[10%] lg:top-32 lg:left-40"></div>
-            </div>
-        </m.section>
+            </m.div>
+            <div className="relative top-36 w-2/5 h-56 lg:h-96 left-[10%] md:top-32 md:left-40"></div>
+        </section>
     )
 }

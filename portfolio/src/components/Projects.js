@@ -1,16 +1,38 @@
-import React from "react";
+import React, {useEffect} from "react";
 import IcePace from './IcePace.png';
 import SurfwaveFury from './SurfwaveFury.png';
 import IglooInbox from './IglooInbox.png';
 import ArcticExchange from './ArcticExchange.png';
+import {motion as m, useAnimation} from "framer-motion";
+import {useInView} from "react-intersection-observer";
 
 
 export default function Projects() {
+    const boxVariant = {
+        visible: { opacity: 1},
+        hidden: { opacity: 0},
+    }
+
+    const control = useAnimation()
+    const [ref, inView] = useInView()
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        } else {
+            control.start("hidden");
+        }
+    }, [control, inView]);
+
     return (
         <section id="projects" className="bg-zinc-900">
-            <div className="relative">
-                <div className="absolute w-52 h-8 z-0 bg-[#263d28] top-44 left-[18%] lg:h-10 lg:left-[11%] lg:w-[350px] xl:left-[20%]"></div>
-                <div className="relative top-36 w-2/5 left-[10%] lg:top-32 lg:left-[7%] xl:left-[18%]">
+            <m.div ref={ref}
+                 variants={boxVariant}
+                 initial="hidden"
+                 animate={control}
+                 className="relative">
+                <div className="absolute w-52 h-8 z-0 bg-[#263d28] top-36 left-[18%] lg:h-10 lg:left-[11%] lg:w-[350px] xl:left-[20%]"></div>
+                <div className="relative top-28 w-2/5 left-[10%] lg:top-32 lg:left-[7%] xl:left-[18%]">
                     <h1 className="text-6xl lg:text-12xl lg:text-8xl text-white font-['Great_Sailor']">
                         Projects.
                     </h1>
@@ -103,8 +125,8 @@ export default function Projects() {
                         </div>
                     </div>
                 </div>
-                <div className="relative top-36 w-2/5 h-32 left-[10%] md:top-32 md:left-40"></div>
-            </div>
+            </m.div>
+            <div className="relative top-36 w-2/5 h-20 lg:h-72 left-[10%] md:top-32 md:left-40"></div>
         </section>
     )
 }

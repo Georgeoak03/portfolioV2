@@ -1,17 +1,32 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import React from "react";
-import { motion as m } from "framer-motion";
+import React, {useEffect} from "react";
+import { useAnimation, motion as m } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function Splash() {
+    const boxVariant = {
+        visible: { opacity: 1},
+        hidden: { opacity: 0},}
+
+    const control = useAnimation()
+    const [ref, inView] = useInView()
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible");
+        } else {
+            control.start("hidden");
+        }}, [control, inView]);
+
     return (
-        <m.section initial={{ opacity: 0 }}
-                   animate={{ opacity: 1 }}
-                   transition={{ duration: 0.75, ease: "easeOut" }}
-                   id="splash" className="bg-zinc-900 min-h-screen z-999">
-            <div>
+        <section id="splash" className="bg-zinc-900 min-h-screen z-999">
+            <m.div ref={ref}
+                   variants={boxVariant}
+                   initial="hidden"
+                   animate={control}
+                   className="h-auto">
                 <div className="relative">
                     <div className="relative h-fit left-[10%] md:left-[25%] lg:left-[35%] w-screen">
-                        {/*<div className="hidden absolute z-0 bg-[#222A23] w-[70%] h-[475px] top-44 left-[15%] md:top-52 md:h-[55%] md:left-1/4 xl:w-[55%]"></div>*/}
                         <div className="invisible lg:visible absolute top-48 -left-52 w-72 h-72 bg-[#222A23] rounded-full  filter blur-xl  animate-blob animation-delay-6000"></div>
                         <div className="absolute top-44 left-4 w-72 h-72 bg-[#3b403b] rounded-full  filter blur-xl  animate-blob overflow-hidden"></div>
                         <div className="absolute top-44 left-36 w-72 h-72 bg-[#30332f] rounded-full  filter blur-xl opacity-90 animate-blob animation-delay-2000 overflow-hidden"></div>
@@ -32,8 +47,8 @@ export default function Splash() {
                         <FontAwesomeIcon icon="fa-solid fa-arrow-down" className="text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
                     </a>
                 </div>
-                <div className="relative top-36 w-2/5 h-32 left-[10%] md:top-32 md:left-40"></div>
-            </div>
-        </m.section>
+            </m.div>
+            <div className="relative top-36 w-2/5 h-32 left-[10%] md:top-32 md:left-40"></div>
+        </section>
     )
 }
