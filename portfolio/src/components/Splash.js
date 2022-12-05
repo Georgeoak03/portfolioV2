@@ -39,7 +39,7 @@ export default function Splash() {
                         </h1>
                     </div>
                     <div className="relative z-10 w-auto inline-block mt-48 ml-[18%] md:left-[20%] lg:left-[30%] text-left">
-                        <p className="text-5xl text-white font-['Great_Sailor'] md:text-5xl italic w-auto inline-block">I'm <span className="text-[#85B97C] not-italic"><span className="text-6xl md:text-7xl">G</span>eorge <span className="text-6xl md:text-7xl">O</span>akley</span>,</p><p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic"><span className="whitespace-nowrap w-auto inline-block">a FULL</span>-STACK</p> <p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic w-auto inline-block">DEVELOPER.</p>
+                        <p className="text-5xl text-white font-['Great_Sailor'] md:text-5xl italic w-auto inline-block">I'm <span className="text-[#85B97C] not-italic"><m.span ref={ref} variants={boxVariant} initial="visible"animate={control} className="h-auto text-6xl md:text-7xl">G</m.span>eorge <span className="text-6xl md:text-7xl">O</span>akley</span>,</p><p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic"><span className="whitespace-nowrap w-auto inline-block">a FULL</span>-STACK</p> <p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic w-auto inline-block">DEVELOPER.</p>
                     </div>
                 </div>
                 <div className="relative bottom-10 z-10 w-auto mt-28 flex justify-center w-screen hover:animate-bounce">
