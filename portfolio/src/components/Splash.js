@@ -2,6 +2,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React, {useEffect} from "react";
 import { useAnimation, motion as m } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import './Splash.css';
 
 export default function Splash() {
     const boxVariant = {
