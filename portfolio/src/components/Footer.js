@@ -36,9 +36,15 @@ export default function Footer() {
             </div>
             <div className="md:hidden relative flex-wrap-col m-auto justify-center p-4">
                 <div>
-                    <FontAwesomeIcon icon="fa-brands fa-linkedin" className="text-gray-500 text-6xl mr-10"/>
-                    <FontAwesomeIcon icon="fa-solid fa-envelope" className="text-gray-500 text-6xl mr-10" />
-                    <FontAwesomeIcon icon="fa-brands fa-github" className="text-gray-500 text-6xl" />
+                    <a href="https://www.linkedin.com/in/george-oakley-84b95894">
+                        <FontAwesomeIcon icon="fa-brands fa-linkedin" className="text-gray-500 text-6xl mr-10 hover:text-white transition ease-in-out duration-1000 transform"/>
+                    </a>
+                    <a href="mailto: george.oakley@hotmail.co.uk">
+                        <FontAwesomeIcon icon="fa-solid fa-envelope" className="text-gray-500 text-6xl mr-10 hover:text-white transition ease-in-out duration-1000 transform" />
+                    </a>
+                    <a href="https://github.com/Georgeoak03">
+                        <FontAwesomeIcon icon="fa-brands fa-github" className="text-gray-500 text-6xl hover:text-white transition ease-in-out duration-1000 transform" />
+                    </a>
                 </div>
                 <h2 className=" font-['Futura'] text-gray-500 text-md flex justify-center pt-4">George Oakley 2022</h2>
             </div>

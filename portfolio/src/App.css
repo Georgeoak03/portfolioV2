@@ -1,11 +1,11 @@
 #main {
-    box-sizing: border-box;}
+    box-sizing: border-box;
 /*    scroll-snap-type: y proximity;*/
 /*    overflow-y: scroll;*/
-/*    overflow-x: hidden;*/
+    overflow-x: hidden;
 /*    height: 100vh;*/
 /*    scroll-behavior: smooth;*/
-/*}*/
+}
 
 /*section {*/
 /*    scroll-snap-align: start;*/

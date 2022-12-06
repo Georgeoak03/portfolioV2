@@ -70,7 +70,7 @@ export default function Contact() {
                             <div className="flex justify-end">
                                 <button
                                     type="submit"
-                                    className="text-white bg-gray-700 py-1 px-2 focus:outline-none hover:bg-indigo-600 rounded-xl text-2xl relative right-0 drop-shadow-2xl shadow-2xl font-['Great_Sailor']">
+                                    className="text-white bg-zinc-700 py-1 px-2 focus:outline-none hover:bg-[#597554] hover:text-zinc-900 transition ease-in-out duration-1000 transform rounded-xl text-2xl relative right-0 drop-shadow-2xl shadow-2xl font-['Great_Sailor']">
                                     Submit.
                                 </button>
                             </div>
