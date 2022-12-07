@@ -20,6 +20,30 @@ export default function Contact() {
         }
     }, [control, inView]);
 
+    const [name, setName] = React.useState("");
+    const [email, setEmail] = React.useState("");
+    const [message, setMessage] = React.useState("");
+
+    function encode(data) {
+        return Object.keys(data)
+            .map(
+                (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+            )
+            .join("&");
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", name, email, message }),
+        })
+            .then(() => alert("Message sent!"))
+            .catch((error) => alert(error));
+    }
+
+
     return (
         <section id="contact" className="bg-zinc-900">
             <m.div ref={ref}
@@ -48,6 +72,7 @@ export default function Contact() {
                                     name="name"
                                     placeholder="Name"
                                     className="w-full bg-gray-500 rounded-xl focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder-gray-800 placeholder:font-['Futura'] placeholder:text-sm"
+                                    onChange={(e) => setName(e.target.value)}
                                 />
                             </div>
                             <div className="relative mb-4">
@@ -57,6 +82,7 @@ export default function Contact() {
                                     name="email"
                                     placeholder="Email"
                                     className="w-full bg-gray-500 rounded-xl focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder-gray-800 placeholder:font-['Futura'] placeholder:text-sm"
+                                    onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
                             <div className="relative mb-4">
@@ -65,6 +91,7 @@ export default function Contact() {
                                     name="message"
                                     placeholder="Message"
                                     className="w-full bg-gray-500 rounded-xl focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out placeholder-gray-800 placeholder:font-['Futura'] placeholder:text-sm"
+                                    onChange={(e) => setMessage(e.target.value)}
                                 />
                             </div>
                             <div className="flex justify-end">
