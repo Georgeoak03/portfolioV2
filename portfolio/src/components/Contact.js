@@ -55,7 +55,7 @@ export default function Contact() {
                 <div className="absolute w-[200px] h-6 lg:h-3/5 z-0 bg-[#263d28] top-40 left-[18%] lg:h-9 lg:left-[12%] lg:top-44 lg:w-[550px]"></div>
                 <div className="absolute w-[75px] h-6 lg:h-3/5 z-0 bg-[#263d28] top-56 left-[18%] lg:hidden lg:h-9 lg:left-[12%] lg:top-44 lg:w-[550px]"></div>
                 <div className="relative z-10 w-4/5 top-32 left-[13%] lg:top-32 lg:left-[8%]">
-                    <h1 className="text-6xl w-2/5 lg:text-12xl lg:text-8xl text-white font-['Great_Sailor'] lg:w-full">
+                    <h1 className="text-6xl w-2/5 lg:text-12xl lg:text-8xl text-white font-greatSailor lg:w-full">
                         Contact me.
                     </h1>
                 </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                             <div className="flex justify-end">
                                 <button
                                     type="submit"
-                                    className="text-white bg-zinc-700 py-1 px-2 focus:outline-none hover:bg-[#597554] hover:text-zinc-900 transition ease-in-out duration-1000 transform rounded-xl text-2xl relative right-0 drop-shadow-2xl shadow-2xl font-['Great_Sailor']">
+                                    className="text-white bg-zinc-700 py-1 px-2 focus:outline-none hover:bg-[#597554] hover:text-zinc-900 transition ease-in-out duration-1000 transform rounded-xl text-2xl relative right-0 drop-shadow-2xl shadow-2xl font-greatSailor">
                                     Submit.
                                 </button>
                             </div>

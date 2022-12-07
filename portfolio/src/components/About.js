@@ -38,7 +38,7 @@ export default function About() {
                     <img src={photoOfMe} alt="George" className="grayscale opacity-25 lg:opacity-75"/>
                 </div>
                 <div className="relative z-10 w-4/5 top-32 left-[20%] lg:top-32 lg:left-[12%]">
-                    <h1 className="text-6xl w-1/5 lg:w-full lg:text-12xl lg:text-8xl text-white font-['Great_Sailor']">
+                    <h1 className="text-6xl w-1/5 lg:w-full lg:text-12xl lg:text-8xl text-white font-greatSailor">
                         About me.
                     </h1>
                 </div>

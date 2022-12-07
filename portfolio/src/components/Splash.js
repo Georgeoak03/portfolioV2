@@ -46,15 +46,15 @@ export default function Splash() {
                         <div className="collapse lg:visible absolute top-[475px] left-64 w-72 h-72 bg-[#3b403b rounded-full filter blur-3xl  animate-blob animation-delay-6000"></div>
                     </div>
                     <div className="relative max-w-xs z-10 top-36 left-[10%] md:left-[15%]">
-                        <h1 className="lg:text-[175px] md:text-[150px] text-8xl text-white font-['Great_Sailor']">
+                        <h1 className="lg:text-[175px] md:text-[150px] text-8xl text-white font-greatSailor">
                             HELLO THERE!
                         </h1>
                     </div>
                     <div className="relative z-10 w-auto inline-block mt-48 ml-[18%] md:left-[20%] lg:left-[30%] text-left">
-                        <p className="text-5xl text-white font-['Great_Sailor'] md:text-5xl italic w-auto inline-block">I'm <span className="text-[#85B97C] not-italic"><m.span ref={ref}
-                                                                                                                                                                                variants={item}
-                                                                                                                                                                                initial="hidden"
-                                                                                                                                                                                animate={control} className="h-auto text-6xl md:text-7xl">G</m.span>eorge <span className="text-6xl md:text-7xl">O</span>akley</span>,</p><p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic"><span className="whitespace-nowrap w-auto inline-block">a FULL</span>-STACK</p> <p className="text-5xl md:text-5xl text-white font-['Great_Sailor'] italic w-auto inline-block">DEVELOPER.</p>
+                        <p className="text-5xl text-white font-greatSailor md:text-5xl italic w-auto inline-block">I'm <span className="text-[#85B97C] not-italic"><m.span ref={ref}
+                                                                                                                                                                           variants={item}
+                                                                                                                                                                           initial="hidden"
+                                                                                                                                                                           animate={control} className="h-auto text-6xl md:text-7xl">G</m.span>eorge <span className="text-6xl md:text-7xl">O</span>akley</span>,</p><p className="text-5xl md:text-5xl text-white font-greatSailor italic"><span className="whitespace-nowrap w-auto inline-block">a FULL</span>-STACK</p> <p className="text-5xl md:text-5xl text-white font-greatSailor italic w-auto inline-block">DEVELOPER.</p>
                     </div>
                 </div>
                 <div className="relative bottom-10 z-10 w-auto mt-28 flex justify-center w-screen hover:animate-bounce">

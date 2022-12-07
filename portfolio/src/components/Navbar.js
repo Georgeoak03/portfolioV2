@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <section id="navbar">
             <header className="fixed w-full z-20 top-0 bg-zinc-900 bg-opacity-95 flex flex-wrap items-center justify-between mx-auto p-1 px-4">
-                <a href="#splash" className="font-['Great_Sailor'] text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
+                <a href="#splash" className="font-greatSailor text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
                 <nav>
                 <div className="mobile-menu flex lg:hidden">
                     <div className="top-4 absolute
@@ -22,24 +22,24 @@ export default function Navbar() {
                         </div>
                         <ul className="NAVIGATION-MOBILE-OPEN flex flex-col justify-between bg-zinc-900 opacity-75 p-8 border-2 border-gray-700 rounded-lg transition ease-in-out duration-1000 transform">
                             <li>
-                                <a href="#splash" onClick={() => setIsNavOpen(false)} className="font-['Great_Sailor'] text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
+                                <a href="#splash" onClick={() => setIsNavOpen(false)} className="font-greatSailor text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
                             </li>
                             <li>
-                                <a href="#about-me" onClick={() => setIsNavOpen(false)} className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">About.</a>
+                                <a href="#about-me" onClick={() => setIsNavOpen(false)} className="font-greatSailor text-white text-6xl hover:text-[#85B97C]">About.</a>
                             </li>
                             <li>
-                                <a href="#projects" onClick={() => setIsNavOpen(false)} className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">Projects.</a>
+                                <a href="#projects" onClick={() => setIsNavOpen(false)} className="font-greatSailor text-white text-6xl hover:text-[#85B97C]">Projects.</a>
                             </li>
                             <li>
-                                <a href="#contact" onClick={() => setIsNavOpen(false)} className="font-['Great_Sailor'] text-white text-6xl hover:text-[#85B97C]">Contact.</a>
+                                <a href="#contact" onClick={() => setIsNavOpen(false)} className="font-greatSailor text-white text-6xl hover:text-[#85B97C]">Contact.</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                     <div className="hidden w-full md:block md:w-auto space-x-4" id="navbar-default">
-                        <a href="#about-me" className="font-['Great_Sailor'] text-gray-700 text-6xl md:text-5xl collapse md:visible hover:text-[#5C5C5C] transition ease-in-out duration-1000 transform">About.</a>
-                        <a href="#projects" className="font-['Great_Sailor'] text-gray-700 text-6xl md:text-5xl collapse md:visible hover:text-[#465746] transition ease-in-out duration-1000 transform">Projects.</a>
-                        <a href="#contact" className="font-['Great_Sailor'] text-gray-700 text-6xl md:text-5xl collapse md:visible hover:text-[#2D5227] transition ease-in-out duration-1000 transform">Contact.</a>
+                        <a href="#about-me" className="font-greatSailor text-gray-700 text-6xl md:text-5xl collapse md:visible hover:text-[#5C5C5C] transition ease-in-out duration-1000 transform">About.</a>
+                        <a href="#projects" className="font-greatSailor text-gray-700 text-6xl md:text-5xl collapse md:visible hover:text-[#465746] transition ease-in-out duration-1000 transform">Projects.</a>
+                        <a href="#contact" className="font-greatSailor text-gray-700 text-6xl md:text-5xl collapse md:visible hover:text-[#2D5227] transition ease-in-out duration-1000 transform">Contact.</a>
                     </div>
                 </nav>
             </header>
