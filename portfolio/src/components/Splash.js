@@ -38,26 +38,29 @@ export default function Splash() {
                    className="h-auto">
                 <div className="relative">
                     <div className="relative h-fit left-[10%] md:left-[25%] lg:left-[35%] w-screen">
+                        <div className="absolute top-24 lg:top-44 left-2 lg:left-4 w-72 h-72 bg-[#3b403b] rounded-full filter blur-xl lg:blur-3xl animate-blob overflow-hidden"></div>
+                        <div className="absolute top-24 lg:top-44 left-20 lg:left-36 w-72 h-72 bg-[#30332f] rounded-full filter blur-xl lg:blur-3xl opacity-90 animate-blob animation-delay-2000 overflow-hidden"></div>
+                        <div className="absolute top-60 lg:top-96 left-10 lg:left-20 w-72 h-72 bg-[#3b403b] rounded-full filter blur-xl animate-blob animation-delay-4000 overflow-hidden"></div>
                         <div className="invisible lg:visible absolute top-48 -left-52 w-72 h-72 bg-[#3b403b] rounded-full filter blur-3xl animate-blob animation-delay-6000"></div>
                         <div className="invisible lg:visible absolute top-56 -left-40 w-72 h-72 bg-[#3b403b] rounded-full filter blur-3xl animate-blob animation-delay-1000"></div>
-                        <div className="absolute top-44 left-4 w-72 h-72 bg-[#3b403b] rounded-full filter blur-2xl lg:blur-3xl animate-blob overflow-hidden"></div>
-                        <div className="absolute top-44 left-36 w-72 h-72 bg-[#30332f] rounded-full filter blur-2xl lg:blur-3xl opacity-90 animate-blob animation-delay-2000 overflow-hidden"></div>
-                        <div className="absolute top-96 left-20 w-72 h-72 bg-[#3b403b] rounded-full filter blur-3xl animate-blob animation-delay-4000 overflow-hidden"></div>
                         <div className="collapse lg:visible absolute top-[475px] left-64 w-72 h-72 bg-[#3b403b rounded-full filter blur-3xl  animate-blob animation-delay-6000"></div>
                     </div>
-                    <div className="relative max-w-xs z-10 top-36 left-[10%] md:left-[15%]">
+                    <div className="relative max-w-xs z-10 top-28 lg:top-36 left-[10%] md:left-[15%] lg:left-[25%]">
                         <h1 className="lg:text-[175px] md:text-[150px] text-8xl text-white font-greatSailor">
                             HELLO THERE!
                         </h1>
                     </div>
-                    <div className="relative z-10 w-auto inline-block mt-48 ml-[18%] md:left-[20%] lg:left-[30%] text-left">
-                        <p className="text-5xl text-white font-greatSailor md:text-5xl italic w-auto inline-block">I'm <span className="text-[#85B97C] not-italic"><m.span ref={ref}
-                                                                                                                                                                           variants={item}
-                                                                                                                                                                           initial="hidden"
-                                                                                                                                                                           animate={control} className="h-auto text-6xl md:text-7xl">G</m.span>eorge <span className="text-6xl md:text-7xl">O</span>akley</span>,</p><p className="text-5xl md:text-5xl text-white font-greatSailor italic"><span className="whitespace-nowrap w-auto inline-block">a FULL</span>-STACK</p> <p className="text-5xl md:text-5xl text-white font-greatSailor italic w-auto inline-block">DEVELOPER.</p>
+                    <div className="relative z-10 w-52 lg:w-auto inline-block left-[20%] mr-[20%] mt-28 lg:mt-36  lg:left-[45%] text-left">
+                        <p className="text-3xl text-zinc-300 font-greatSailor md:text-5xl italic w-auto inline-block">I'm
+                        <p className="text-[#85B97C] text-5xl not-italic">
+                            <span className="h-auto text-6xl md:text-7xl">G</span>eorge
+                            <span className="text-6xl md:text-7xl"> O</span>akley,
+                        </p>
+                        </p>
+                        <p className="text-3xl md:text-5xl text-zinc-300 font-greatSailor italic"><span className="whitespace-nowrap w-auto inline-block">a FULL</span>-STACK</p> <p className="text-3xl md:text-5xl text-zinc-300 font-greatSailor italic w-auto inline-block">DEVELOPER.</p>
                     </div>
                 </div>
-                <div className="relative bottom-10 z-10 w-auto mt-28 flex justify-center w-screen hover:animate-bounce">
+                <div className="absolute pin-b bottom-10 lg:bottom-20 z-10 left-1/2 w-fit m-auto flex justify-center hover:animate-bounce">
                     <a href="#about-me">
                         <FontAwesomeIcon icon="fa-solid fa-arrow-down" className="text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
                     </a>

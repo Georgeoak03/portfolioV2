@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 function App() {
 
     return (
-        <main id="main" className="bg-zinc-900 min-h-full scroll-smooth">
+        <main id="main" className="bg-zinc-900 min-h-full">
             <Splash id="splash"/>
             <Navbar />
             <About id="about"/>

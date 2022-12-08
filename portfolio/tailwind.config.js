@@ -4,7 +4,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
     fontFamily: {
-      'greatSailor': ["GREAT-SAILOR", "cursive"]
+      'greatSailor': ["GREAT-SAILOR", "serif"]
     },
     extend: {
       animation: {
