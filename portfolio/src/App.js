@@ -11,7 +11,7 @@ function App() {
 
     return (
         <main id="main" className="bg-zinc-900 min-h-full">
-            <Splash id="splash"/>
+            <Splash id="splash" />
             <Navbar />
             <About id="about"/>
             <Projects id="projects"/>

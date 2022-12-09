@@ -8,19 +8,19 @@ export default function Navbar() {
 
     return (
         <section id="navbar">
-            <header className="fixed w-full z-20 top-0 bg-zinc-900 bg-opacity-80 flex flex-wrap items-center justify-between mx-auto p-1 px-4">
-                <a href="#splash" className="font-greatSailor text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
+            <header className="fixed w-full z-20 top-0 bg-zinc-900 bg-opacity-70 lg:bg-opacity-95 flex flex-wrap items-center justify-between mx-auto p-1 px-4">
+                <a href="#splash" className="bg-zinc-900 opacity-80 rounded-xl font-greatSailor text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
                 <nav>
                 <div className="mobile-menu flex lg:hidden">
                     <div className="top-4 absolute
                     right-0 px-8" onClick={() => setIsNavOpen((prev) => !prev)}>
-                        <FontAwesomeIcon icon="fa-solid fa-bars" className="lg:collapse text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
+                        <FontAwesomeIcon icon="fa-solid fa-bars" className="lg:collapse bg-zinc-900 opacity-80 rounded-xl text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
                     </div>
                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
                         <div className="CROSS-ICON absolute top-0 right-2 px-8 py-8 z-20 lg:z-0 lg:collapse" onClick={() => setIsNavOpen(false)}>
                             <FontAwesomeIcon icon="fa-solid fa-xmark" className="text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
                         </div>
-                        <ul className="NAVIGATION-MOBILE-OPEN flex flex-col justify-between bg-zinc-900 opacity-75 p-8 border-2 border-gray-700 rounded-lg transition ease-in-out duration-1000 transform">
+                        <ul className="NAVIGATION-MOBILE-OPEN flex flex-col justify-between bg-zinc-900 p-8 border-2 border-gray-700 rounded-lg transition ease-in-out duration-1000 transform">
                             <li>
                                 <a href="#splash" onClick={() => setIsNavOpen(false)} className="font-greatSailor text-[#85B97C] text-6xl">G<span className="text-white">.</span>O<span className="text-white">.</span></a>
                             </li>

@@ -52,14 +52,14 @@ export default function Contact() {
                    animate={control}
                 className="flex-wrap-col relative m-auto lg:m-0">
                 <div className="invisible absolute z-0 bg-[#222A23] w-[70%] h-[475px] top-44 left-[15%] lg:visible lg:top-32 lg:h-[600px] lg:left-[20%]"></div>
-                <div className="absolute w-[200px] h-6 lg:h-3/5 z-0 bg-[#263d28] top-40 left-[18%] lg:h-9 lg:left-[12%] lg:top-44 lg:w-[550px]"></div>
-                <div className="absolute w-[75px] h-6 lg:h-3/5 z-0 bg-[#263d28] top-56 left-[18%] lg:hidden lg:h-9 lg:left-[12%] lg:top-44 lg:w-[550px]"></div>
-                <div className="relative z-10 w-4/5 top-32 left-[13%] lg:top-32 lg:left-[8%]">
+                <div className="absolute w-[200px] h-6 lg:h-3/5 z-0 bg-[#263d28] top-28 left-[18%] lg:h-9 lg:left-[12%] lg:top-44 lg:w-[550px]"></div>
+                <div className="absolute w-[85px] h-6 lg:h-3/5 z-0 bg-[#263d28] top-44 left-[18%] lg:hidden lg:h-9 lg:left-[12%] lg:top-44 lg:w-[550px]"></div>
+                <div className="relative z-10 w-4/5 top-20 left-[13%] lg:top-32 lg:left-[8%]">
                     <h1 className="text-6xl w-2/5 lg:text-12xl lg:text-8xl text-white font-greatSailor lg:w-full">
                         Contact me.
                     </h1>
                 </div>
-                <div className="relative z-10 flex sm:flex-nowrap flex-wrap top-14 p-12">
+                <div className="relative z-10 flex sm:flex-nowrap flex-wrap top-8 p-12">
                     <form name="contact" className="flex flex-col lg:m-0 w-full lg:py-8 mt-8 lg:mt-9">
                         <div className="relative flex-wrap-col m-auto justify-center lg:left-[30%] lg:m-0 w-[300px]">
                             <p className="text-sm text-white text-right font-['Futura']">Do you have any questions or do you want to work together? Please get in contact and I'll get back to you.</p>
