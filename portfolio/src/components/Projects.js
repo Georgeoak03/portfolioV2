@@ -26,21 +26,21 @@ export default function Projects() {
     }, [control, inView]);
 
     return (
-        <section id="projects" className="bg-zinc-900">
+        <section id="projects">
             <m.div ref={ref}
                  variants={boxVariant}
                  initial="hidden"
                  animate={control}
                  className="relative">
-                <div className="absolute w-52 h-8 z-0 bg-[#263d28] top-28 lg:top-44 left-[18%] lg:h-10 lg:left-[11%] lg:w-[350px] xl:left-[20%]"></div>
+                <div className="absolute bg-[#263d28] w-52 h-8 z-0 top-28 left-[18%] lg:top-44 lg:h-10 lg:left-[11%] lg:w-[350px] xl:left-[20%]"></div>
                 <div className="relative top-20 w-2/5 left-[10%] lg:top-32 lg:left-[7%] xl:left-[18%]">
-                    <h1 className="text-6xl lg:text-12xl lg:text-8xl text-white font-greatSailor">
+                    <h1 className="text-6xl lg:text-8xl text-white font-greatSailor">
                         Projects.
                     </h1>
                 </div>
-                <div className="relative flex-wrap-col m-auto justify-center top-24 w-fit lg:w-[500px] lg:top-32 lg:w-[700px] lg:justify-between xl:w-[800px] xl:h-[800px]">
+                <div className="relative flex-wrap-col m-auto justify-center top-24 w-fit lg:top-32 lg:w-[700px] lg:h-[700px] lg:justify-between xl:w-[800px] xl:h-[800px]">
                     <div className="lg:m-8 lg:grid lg:grid-cols-3 lg:grid-rows-3 lg:gap-5 lg:justify-evenly">
-                        <div className="relative flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5 lg:p-3 lg:m-0 lg:col-span-1 lg:w-auto xl:h-52">
+                        <div className="relative flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl shadow-black p-5 lg:p-3 lg:m-0 lg:col-span-1 lg:w-auto xl:h-52">
                             <div className="absolute z-0 w-36 h-36 right-5 h-full overflow-hidden">
                                 <img src={IcePace} alt="IcePace" className="opacity-[.15] blur-[1px]"/>
                             </div>
@@ -56,7 +56,7 @@ export default function Projects() {
                                 </div>
                             </a>
                         </div>
-                        <div className="relative flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5 lg:p-3 lg:flex lg:col-span-2 lg:m-0 lg:w-auto xl:h-52">
+                        <div className="relative flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl shadow-black p-5 lg:p-3 lg:flex lg:col-span-2 lg:m-0 lg:w-auto xl:h-52">
                             <div className="absolute z-0 w-36 h-36 left-5 h-full overflow-hidden lg:top-0 lg:p-5">
                                 <img src={IglooInbox} alt="Igloo Inbox" className="opacity-[.15] blur-[1px]"/>
                             </div>
@@ -74,7 +74,7 @@ export default function Projects() {
                                 </div>
                             </a>
                         </div>
-                        <div className="relative flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5 lg:p-3 lg:flex lg:col-span-3 lg:m-0 lg:w-auto xl:h-52">
+                        <div className="relative flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl shadow-black p-5 lg:p-3 lg:flex lg:col-span-3 lg:m-0 lg:w-auto xl:h-52">
                             <div className="absolute z-0 w-36 h-36 right-5 h-full overflow-hidden">
                                 <img src={SurfwaveFury} alt="Surfwave Fury" className="opacity-[.15] blur-[1px]"/>
                             </div>
@@ -90,7 +90,7 @@ export default function Projects() {
                                 </div>
                             </a>
                         </div>
-                        <div className="relative flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5 lg:p-3 lg:m-0 lg:col-span-2 lg:w-auto xl:h-52">
+                        <div className="relative flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl shadow-black p-5 lg:p-3 lg:m-0 lg:col-span-2 lg:w-auto xl:h-52">
                             <div className="absolute z-0 w-36 h-36 left-5 overflow-hidden">
                                 <img src={ArcticExchange} alt="Arctic Exchange" className="opacity-[.15] blur-[1px]"/>
                             </div>
@@ -108,7 +108,7 @@ export default function Projects() {
                                 </div>
                             </a>
                         </div>
-                        <div className="relative flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl border-[#0d0d0d] border-[1px] border-solid p-5 lg:p-3 lg:pt-1 lg:m-0 lg:col-span-1 lg:w-auto xl:h-52">
+                        <div className="relative flex-wrap-col w-72 h-40 z-10 m-10 rounded-xl bg-[#292929] drop-shadow-2xl shadow-2xl shadow-black p-5 lg:p-3 lg:pt-1 lg:m-0 lg:col-span-1 lg:w-auto xl:h-52">
                             <div className="absolute z-0 right-5 w-36 h-36 object-fill overflow-hidden">
                                 <img src={WineCollector} alt="Wine Collector" className="opacity-[.15] blur-[1px]"/>
                             </div>

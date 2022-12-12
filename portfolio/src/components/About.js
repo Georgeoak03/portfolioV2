@@ -35,8 +35,8 @@ export default function About() {
                 <div className="invisible lg:visible absolute z-0 bg-[#222A23] w-[70%] top-28  h-[700px] left-[20%]"></div>
                 <div className="absolute z-0 bg-[#263d28] w-[175px] lg:w-[300px] h-6 top-28 left-[25%] lg:h-8 lg:left-[16%] lg:top-40"></div>
                 <div className="absolute lg:hidden w-[85px] z-0 bg-[#263d28] h-6 top-44 left-[25%]"></div>
-                <div className="flex absolute z-0 left-[55%] w-36  top-40 lg:w-72 lg:left-[60%] lg:top-72">
-                    <img src={photoOfMe} alt="George" className="grayscale opacity-25 lg:opacity-75"/>
+                <div className="flex absolute z-0 left-[55%] top-40 lg:left-[60%] lg:top-72">
+                    <img src={photoOfMe} alt="George" className="grayscale h-auto w-36 lg:w-72 opacity-25 lg:opacity-75"/>
                 </div>
                 <div className="relative z-10 w-4/5 top-20 left-[20%] lg:top-32 lg:left-[12%]">
                     <h1 className="text-white font-greatSailor text-6xl w-1/5 lg:w-full lg:text-12xl">

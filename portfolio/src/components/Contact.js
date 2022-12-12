@@ -65,7 +65,7 @@ export default function Contact() {
                             <p className="text-sm text-white text-right font-['Futura']">Do you have any questions or do you want to work together? Please get in contact and I'll get back to you.</p>
                         </div>
                         <div className="relative flex-wrap-col m-auto justify-center lg:absolute pt-5 w-[300px] lg:w-[20%] lg:left-[62%] xl:left-[53%] xl:top-36">
-                            <div className="relative mb-4">
+                            <div className="relative mb-4 shadow-inner">
                                 <input
                                     type="text"
                                     id="name"
@@ -97,7 +97,7 @@ export default function Contact() {
                             <div className="flex justify-end">
                                 <button
                                     type="submit"
-                                    className="text-white bg-zinc-700 py-1 px-2 focus:outline-none hover:bg-[#597554] hover:text-zinc-900 transition ease-in-out duration-1000 transform rounded-xl text-2xl relative right-0 drop-shadow-2xl shadow-2xl font-greatSailor">
+                                    className="text-white bg-zinc-700 py-1 px-2 focus:outline-none hover:bg-[#597554] hover:text-zinc-900 transition ease-in-out duration-1000 transform rounded-xl text-2xl relative right-0 shadow-md shadow-black font-greatSailor">
                                     Submit.
                                 </button>
                             </div>
