@@ -51,9 +51,9 @@ export default function Contact() {
                    initial="hidden"
                    animate={control}
                 className="flex-wrap-col relative m-auto lg:m-0">
-                <div className="invisible absolute z-0 bg-[#222A23] w-[70%] h-[475px] top-44 left-[15%] lg:visible lg:top-32 lg:h-[600px] lg:left-[20%]"></div>
-                <div className="absolute w-[200px] h-6 lg:h-3/5 z-0 bg-[#263d28] top-28 left-[18%] lg:h-9 lg:left-[12%] lg:top-44 lg:w-[550px]"></div>
-                <div className="absolute w-[85px] h-6 lg:h-3/5 z-0 bg-[#263d28] top-44 left-[18%] lg:hidden lg:h-9 lg:left-[12%] lg:top-44 lg:w-[550px]"></div>
+                <div className="invisible lg:visible absolute bg-[#222A23] w-[70%] top-32 h-[600px] left-[20%]"></div>
+                <div className="absolute w-[200px] h-6 bg-[#263d28] lg:h-3/5  top-28 left-[18%] lg:h-9 lg:left-[12%] lg:top-44 lg:w-[550px]"></div>
+                <div className="absolute w-[85px] h-6 bg-[#263d28] lg:h-3/5  top-44 left-[18%] lg:hidden lg:h-9 lg:left-[12%] lg:top-44 lg:w-[550px]"></div>
                 <div className="relative z-10 w-4/5 top-20 left-[13%] lg:top-32 lg:left-[8%]">
                     <h1 className="text-6xl w-2/5 lg:text-12xl lg:text-8xl text-white font-greatSailor lg:w-full">
                         Contact me.
