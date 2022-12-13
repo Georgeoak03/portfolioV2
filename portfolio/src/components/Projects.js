@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
-import IcePace from './IcePace.png';
-import SurfwaveFury from './SurfwaveFury.png';
-import IglooInbox from './IglooInbox.png';
-import ArcticExchange from './ArcticExchange.png';
-import WineCollector from './WineCollector.png';
+import IcePace from '../images/IcePace.png';
+import SurfwaveFury from '../images/SurfwaveFury.png';
+import IglooInbox from '../images/IglooInbox.png';
+import ArcticExchange from '../images/ArcticExchange.png';
+import WineCollector from '../images/WineCollector.png';
 import {motion as m, useAnimation} from "framer-motion";
 import {useInView} from "react-intersection-observer";
 

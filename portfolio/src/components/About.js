@@ -1,10 +1,9 @@
 import React, {useEffect} from "react";
-import './About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import photoOfMe from './photo-of-me.png';
-import postman from './postman.svg';
-import mongodb from './mongodb.svg';
-import mysql from './mysql.svg';
+import photoOfMe from '../images/photo-of-me.png';
+import postman from '../images/postman.svg';
+import mongodb from '../images/mongodb.svg';
+import mysql from '../images/mysql.svg';
 import {motion as m, useAnimation} from "framer-motion";
 import {useInView} from "react-intersection-observer";
 

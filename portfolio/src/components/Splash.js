@@ -2,7 +2,6 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React, {useEffect} from "react";
 import { useAnimation, motion as m } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import './Splash.css';
 
 export default function Splash() {
     const boxVariant = {
@@ -38,9 +37,9 @@ export default function Splash() {
                    className="h-auto">
                 <div className="relative">
                     <div className="relative h-fit left-[10%] md:left-[25%] lg:left-[35%] w-screen">
-                        <div className="absolute bg-[#3b403b] top-36 left-1 w-52 h-52 lg:w-72 lg:h-72 lg:top-64 lg:left-4 rounded-full filter blur-xl lg:blur-2xl animate-blob overflow-hidden"></div>
-                        <div className="absolute bg-[#30332f] top-44 left-10 w-52 h-52 lg:left-36 lg:top-72 lg:w-72 lg:h-72 rounded-full filter blur-xl lg:blur-2xl opacity-90 animate-blob animation-delay-2000 overflow-hidden"></div>
-                        <div className="absolute bg-[#3b403b] top-72 left-10 w-52 h-52 md:top-96 lg:left-20 lg:w-72 lg:h-72 rounded-full filter blur-xl lg:blur-3xl animate-blob animation-delay-4000 overflow-hidden"></div>
+                        <div className="absolute bg-[#3b403b] top-36 left-1 w-52 h-52 lg:w-72 lg:h-72 lg:top-64 lg:left-4 rounded-full filter blur-xl lg:blur-2xl animate-blob-1000 overflow-hidden"></div>
+                        <div className="absolute bg-[#30332f] top-44 left-10 w-52 h-52 lg:left-36 lg:top-72 lg:w-72 lg:h-72 rounded-full filter blur-xl lg:blur-2xl opacity-90 animate-blob animation-delay-200 overflow-hidden"></div>
+                        <div className="absolute bg-[#3b403b] top-72 left-10 w-52 h-52 md:top-96 lg:left-20 lg:w-72 lg:h-72 rounded-full filter blur-xl lg:blur-3xl animate-blob animation-delay-5000 overflow-hidden"></div>
                         <div className="absolute bg-[#3b403b] invisible lg:visible top-48 -left-52 w-72 h-72 rounded-full filter blur-2xl animate-blob animation-delay-6000"></div>
                         <div className="absolute bg-[#3b403b] invisible md:visible top-56 -left-40 w-72 h-72 rounded-full filter blur-2xl animate-blob animation-delay-1000"></div>
                         <div className="absolute bg-[#3b403b] invisible md:visible top-[475px] w-72 h-72  md:left-24 lg:left-64 rounded-full filter blur-3xl animate-blob animation-delay-6000"></div>
@@ -63,10 +62,14 @@ export default function Splash() {
                         <p className="text-3xl md:text-5xl text-zinc-300 font-greatSailor italic w-auto inline-block">DEVELOPER.
                         </p>
                     </div>
+                    <a href="https://rxresu.me/georgedoakley/george-oakley"  className="relative z-10 w-auto left-[30%] mr-[20%] md:left-[40%]  lg:left-[50%] lg:w-auto text-left">
+                        <p className="text-xl md:text-3xl text-zinc-500 font-greatSailor italic w-auto inline-block underline">Check out my CV.
+                        </p>
+                    </a>
                 </div>
                 <div className="absolute pin-b bottom-10 lg:bottom-5 z-10 left-1/2 w-fit m-auto flex justify-center">
                     <a href="#about-me">
-                        <FontAwesomeIcon icon="fa-solid fa-arrow-down" className="text-gray-700 hover:text-white text-4xl hover:animate-bounce transition ease-in-out duration-1000 transform"/>
+                        <FontAwesomeIcon icon="fa-solid fa-arrow-down" className="text-zinc-800 hover:text-zinc-300 text-4xl hover:animate-bounce transition ease-in-out duration-1000 transform"/>
                     </a>
                 </div>
             </m.div>

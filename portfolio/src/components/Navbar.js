@@ -14,7 +14,7 @@ export default function Navbar() {
                 <div className="mobile-menu flex lg:hidden">
                     <div className="top-4 absolute right-0 px-8"
                          onClick={() => setIsNavOpen((prev) => !prev)}>
-                        <FontAwesomeIcon icon="fa-solid fa-bars" className="lg:collapse bg-zinc-900 opacity-80 rounded-xl text-gray-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
+                        <FontAwesomeIcon icon="fa-solid fa-bars" className="lg:collapse bg-zinc-900 opacity-80 rounded-xl text-zinc-700 hover:text-white text-4xl transition ease-in-out duration-1000 transform"/>
                     </div>
                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
                         <div className="CROSS-ICON absolute top-0 right-2 px-8 py-8 z-20 lg:z-0 lg:collapse" onClick={() => setIsNavOpen(false)}>
