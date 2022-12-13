@@ -63,11 +63,11 @@ export default function Splash() {
                         </p>
                     </div>
                     <a href="https://rxresu.me/georgedoakley/george-oakley"  className="relative z-10 w-auto left-[30%] mr-[20%] md:left-[40%]  lg:left-[50%] lg:w-auto text-left">
-                        <p className="text-xl md:text-3xl text-zinc-500 font-greatSailor italic w-auto inline-block underline">Check out my CV.
+                        <p className="text-xl md:text-3xl text-zinc-500 font-greatSailor w-auto inline-block">Check out my CV.
                         </p>
                     </a>
                 </div>
-                <div className="absolute pin-b bottom-10 lg:bottom-5 z-10 left-1/2 w-fit m-auto flex justify-center">
+                <div className="absolute pin-b bottom-5 md:bottom-10 lg:bottom-5 z-10 left-1/2 w-fit m-auto flex justify-center">
                     <a href="#about-me">
                         <FontAwesomeIcon icon="fa-solid fa-arrow-down" className="text-zinc-800 hover:text-zinc-300 text-4xl hover:animate-bounce transition ease-in-out duration-1000 transform"/>
                     </a>
