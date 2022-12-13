@@ -62,7 +62,7 @@ export default function Contact() {
                 <div className="relative z-10 flex sm:flex-nowrap flex-wrap top-8 p-12">
                     <form netlify name="contact" onSubmit={handleSubmit} className="flex flex-col lg:m-0 w-full lg:py-8 mt-8 lg:mt-9">
                         <div className="relative flex-wrap-col m-auto justify-center lg:left-[30%] lg:m-0 w-[300px]">
-                            <p className="text-sm text-white text-right font-['Futura']">Do you have any questions or do you want to work together? Please get in contact and I'll get back to you.</p>
+                            <p className="text-sm text-white text-right font-['Futura']">I'm currently looking for work so if you have any questions or do you want to get in touch, please get in contact and I'll get back to you.</p>
                         </div>
                         <div className="relative flex-wrap-col m-auto justify-center lg:absolute pt-5 w-[300px] lg:w-[20%] lg:left-[62%] xl:left-[53%] xl:top-36">
                             <div className="relative mb-4 shadow-inner">

@@ -127,7 +127,7 @@ export default function Projects() {
                     </div>
                 </div>
             </m.div>
-            <div className="relative top-36 w-2/5 h-56 lg:h-72 left-[10%] md:top-32 md:left-40"></div>
+            <div className="relative h-72 flex"></div>
         </section>
     )
 }
