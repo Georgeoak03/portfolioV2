@@ -2,6 +2,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import React, {useEffect} from "react";
 import { useAnimation, motion as m } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import './Splash.css';
 
 export default function Splash() {
     const boxVariant = {
@@ -44,8 +45,8 @@ export default function Splash() {
                         <div className="absolute bg-[#3b403b] invisible md:visible top-56 -left-40 w-72 h-72 rounded-full filter blur-2xl animate-blob animation-delay-1000"></div>
                         <div className="absolute bg-[#3b403b] invisible md:visible top-[475px] w-72 h-72  md:left-24 lg:left-64 rounded-full filter blur-3xl animate-blob animation-delay-6000"></div>
                     </div>
-                    <div className="relative z-10 max-w-xs top-28 left-[10%] md:left-[15%] lg:left-[25%] lg:top-36">
-                        <h1 className="text-8xl md:text-[150px] lg:text-[175px] text-white font-greatSailor">
+                    <div id="title" className="relative z-10 max-w-xs top-28 left-[10%] md:left-[15%] lg:left-[25%] lg:top-36">
+                        <h1 className="text-8xl md:text-[150px] lg:text-[175px] text-white font-greatSailor text-opacity-75">
                             HELLO THERE!
                         </h1>
                     </div>

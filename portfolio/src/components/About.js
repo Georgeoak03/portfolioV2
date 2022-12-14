@@ -54,7 +54,7 @@ export default function About() {
                         I'm excited to bring my creativity and logic into this challenging new career path.</p>
                 </div>
                 <div className="collapse lg:visible relative flex m-auto justify-center space-x-5 z-10 w-fit left-[5%] w-3/4 top-44 p-6 xl:top-72">
-                    <FontAwesomeIcon icon="fa-brands fa-php" className="collapse lg:visible lg:text-4xl xl:text-5xl text-white"/>
+                    <i className="fa-brands fa-php collapse lg:visible lg:text-4xl xl:text-5xl text-white"/>
                     <FontAwesomeIcon icon="fa-brands fa-js" className="collapse lg:visible lg:text-4xl xl:text-5xl text-white"/>
                     <FontAwesomeIcon icon="fa-brands fa-html5" className="collapse lg:visible lg:text-4xl xl:text-5xl text-white"/>
                     <FontAwesomeIcon icon="fa-brands fa-css3-alt" className="collapse lg:visible lg:text-4xl xl:text-5xl text-white"/>
