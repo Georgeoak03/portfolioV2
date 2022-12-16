@@ -36,7 +36,7 @@ export default function Navbar() {
                         </ul>
                     </div>
                 </div>
-                    <div className="hidden w-full lg:block lg:w-auto space-x-4" id="navbar-default">
+                    <div className="hidden w-full lg:block lg:w-auto space-x-1" id="navbar-default">
                         <a href="#about-me" className="font-greatSailor text-gray-700 text-6xl md:text-5xl collapse lg:visible hover:text-[#5C5C5C] transition ease-in-out duration-1000 transform">About.</a>
                         <a href="#projects" className="font-greatSailor text-gray-700 text-6xl md:text-5xl collapse lg:visible hover:text-[#465746] transition ease-in-out duration-1000 transform">Projects.</a>
                         <a href="#contact" className="font-greatSailor text-gray-700 text-6xl md:text-5xl collapse lg:visible hover:text-[#2D5227] transition ease-in-out duration-1000 transform">Contact.</a>
